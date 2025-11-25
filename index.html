@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=DMU5go3z"></script>
+  <script src="js/qrious.min.js"></script>
+  <title>IS Bingo</title>
+  <style>
+    body {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #displays,
+    #qrcode {
+      display: none;
+      text-align: center;
+    }
+
+    #qrcode img {
+      margin: 80px auto 0;
+    }
+
+    #nplayer,
+    #countdown {
+      font-size: 30px;
+    }
+
+    #text30px {
+      font-size: 30px;
+    }
+
+    #nlast {
+      font-size: 250px;
+    }
+
+    #logo {
+      height: 77px;
+    }
+
+    #offline {
+      color: #c0c0c0;
+    }
+
+    #online {
+      color: #0f0;
+    }
+  </style>
+</head>
+<body>
+  <p id="status_connect">
+    <span id="offline">Offline</span>
+  </p>
+  <p>
+    <img id="logo" src="img/banner.png">
+  </p>
+  <p>
+    <span id="nplayer">0 Player</span>
+    <span id="countdown"></span>
+  <div id="displays">
+    <p>
+    <div id="nlast"></div>
+    </p>
+    <div id="checkNumber"></div>
+  </div>
+  </p>
+  <div id="qrcode">
+    <p>Scan QR Code</p>
+    <canvas id="qrcode-img"></canvas>
+  </div>
+  <script type="module" src="js/dist/server.js"></script>
+</body>
+</html>

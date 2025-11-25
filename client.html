@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IS Bingo</title>
+
+  <style>
+    body {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    #counttime {
+      font-size: 50px;
+      color: "red";
+    }
+
+    #bingo_card {
+      display: none;
+      margin: 24px auto 0;
+      border: 1px solid black;
+    }
+
+    #bingo_card td {
+      width: 80px;
+      height: 80px;
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    #bingo_card img {
+      width: 60px;
+      height: 60px;
+    }
+
+    #checkNumber {
+      display: block;
+      font-size: 16px;
+    }
+
+    #numberSize {
+      font-size: 30px;
+    }
+
+    #logo {
+      height: 77px;
+    }
+
+    #offline {
+      color: #c0c0c0;
+    }
+
+    #online {
+      color: #0f0;
+    }
+
+    .clickable {
+      cursor: pointer;;
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+    <span id="player_name"></span>
+    [<span id="status_connect"><span id="offline">Offline</span></span>]
+  </p>
+  <p>
+    <img id="logo" src="img/banner.png">
+  </p>
+  BINGO GAME
+  <div id="win"></div>
+  <table id="bingo_card" cellspacing="0"></table>
+  <div id="checkNumber">Wait...</div>
+
+  <script type="module" src="js/dist/client.js"></script>
+</body>
+</html>
