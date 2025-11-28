@@ -1,17 +1,18 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore, doc, setDoc, updateDoc, onSnapshot } from "firebase/firestore";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+import { getFirestore, doc, setDoc, updateDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBLmWrBaRcZZdG2e7bOD7MoqoCRirkVZqI",
-  authDomain: "is-bingo.firebaseapp.com",
-  projectId: "is-bingo",
-  storageBucket: "is-bingo.appspot.com",
-  messagingSenderId: "760850828545",
-  appId: "1:760850828545:web:fd731405f3891823cd1f00"
+  apiKey: "AIzaSyCUGJsFu0mGo0njCogC_zMdwRiD2eIyUL0",
+  authDomain: "bingo-gm.firebaseapp.com",
+  projectId: "bingo-gm",
+  storageBucket: "bingo-gm.firebasestorage.app",
+  messagingSenderId: "1082479779938",
+  appId: "1:1082479779938:web:f75e9409333ead5a32313b"
 };
 
-const branch = new URLSearchParams(location.search).get('branch');
 const app = initializeApp(firebaseConfig);
+const branch = new URLSearchParams(location.search).get('branch');
 const game = doc(getFirestore(app), 'game', branch);
 
 const wait = 30;
