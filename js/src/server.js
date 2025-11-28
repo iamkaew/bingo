@@ -1,7 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
 import { getFirestore, doc, setDoc, updateDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyCUGJsFu0mGo0njCogC_zMdwRiD2eIyUL0",
   authDomain: "bingo-gm.firebaseapp.com",
