@@ -180,7 +180,7 @@ new QRious({
   value: `https://ajkaew.github.io/bingo/client.html?branch=${branch}&key=${secretKey}`,
   size: 400
 });
-console.log(`https://ajkaew.github.io/bingo/client.html?branch=${branch}&key=${secretKey}`);
+console.log(`https://iamkaew.github.io/bingo/client.html?branch=${branch}&key=${secretKey}`);
 document.getElementById('status_connect')
   .innerHTML = '<span id="online">Online</span>';
 if (start == 0) {
